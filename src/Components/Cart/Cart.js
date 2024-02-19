@@ -23,7 +23,7 @@ const Cart = (props)=>{
         </ul>
     )
 
-    return <Modal onClose={props.onclose}>
+    return <Modal onClose={props.onClose}>
         {cartItems}
         <div className={classes.action}>
             <button className={classes['button--alt']} onClick={props.onClose}>Close</button>

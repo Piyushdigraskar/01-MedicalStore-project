@@ -38,7 +38,7 @@ const MedItems = (props) => {
                 <ul>
                     {cartCtx.medicines.map((medicine) => (
                         <li key={medicine.id}>
-                            <span>{medicine.name}</span> - <span>{medicine.description}</span> - <span>{medicine.price}</span> - <span>{medicine.quantity} {medicine.quantity === 0 && <span className={classes.outOfStock}>Out of Stock</span>}</span>
+                            <span>{medicine.name}</span> - <span>{medicine.description}</span> - <span>{medicine.price}$</span> - <span>{medicine.quantity} {medicine.quantity === 0 && <span className={classes.outOfStock}>Out of Stock</span>}</span>
                             <Button type='submit' onClick={() => addItemToCartHandler(medicine)} disabled={isButtonDisabled}>Add to cart</Button>
                         </li>
                     ))}
